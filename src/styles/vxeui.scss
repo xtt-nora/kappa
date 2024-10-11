@@ -1,0 +1,170 @@
+@import "./variable.scss";
+:root {
+  --vxe-ui-table-column-padding-default: 0;
+  --vxe-ui-table-row-height-default: $tableRowHeight;
+  --vxe-ui-select-option-height-default: $selectHeight;
+  --vxe-ui-table-row-height-mini: $tableRowHeight;
+  --vxe-ui-button-height-mini: $tableRowHeight;
+}
+
+.vxe-table--render-default,
+.vxe-header--column:not(.col--ellipsis),
+.vxe-body--column {
+  padding: var(--vxe-ui-table-column-padding-default) !important;
+  // .n-select {
+  //   .n-base-selection {
+  //     min-height: unset !important;
+  //     .n-base-selection-label {
+  //       height: 18px;
+  //     }
+  //     .n-base-selection__border {
+  //       height: 18px;
+  //       border: none;
+  //     }
+  //     .n-base-selection__state-border {
+  //       height: 18px;
+  //       border: none;
+  //       box-shadow: none !important;
+  //     }
+  //   }
+  // }
+}
+.vxe-table--render-default .vxe-body--column:not(.col--ellipsis) {
+  padding: var(--vxe-ui-table-column-padding-default) !important;
+}
+.vxe-table--render-default .vxe-footer--column:not(.col--ellipsis) {
+  padding: var(--vxe-ui-table-column-padding-default) !important;
+}
+.vxe-input {
+  height: $inputHeight;
+  line-height: $inputHeight;
+}
+
+.vxe-form--item.is--span .vxe-date-picker,
+.vxe-form--item.is--span
+  .vxe-default-input:not([type="submit"]):not([type="reset"]),
+.vxe-form--item.is--span .vxe-default-select,
+.vxe-form--item.is--span .vxe-default-textarea,
+.vxe-form--item.is--span .vxe-input,
+.vxe-form--item.is--span .vxe-number-input,
+.vxe-form--item.is--span .vxe-password-input,
+.vxe-form--item.is--span .vxe-select,
+.vxe-form--item.is--span .vxe-textarea,
+.vxe-form--item.is--span .vxe-tree-select {
+  width: 100%;
+  height: $inputHeight;
+  line-height: $inputHeight;
+}
+.vxe-select-option:not(.is--disabled).is--hover {
+  background-color: $selectHover;
+}
+.vxe-cell .vxe-default-input,
+.vxe-cell .vxe-default-select,
+.vxe-cell .vxe-default-textarea,
+.vxe-table--filter-template .vxe-default-input,
+.vxe-table--filter-template .vxe-default-select,
+.vxe-table--filter-template .vxe-default-textarea {
+  height: $tableRowHeight;
+}
+.vxe-checkbox {
+  font-size: $checkBoxHeightOrWidth;
+}
+.vxe-checkbox .vxe-checkbox--icon {
+  font-size: $checkBoxHeightOrWidth;
+}
+.vxe-checkbox--label {
+  font-size: 12px;
+}
+.vxe-tabs .vxe-tabs-header--item-inner,
+.vxe-tabs .vxe-tabs-header--wrapper {
+  height: $tabsHeight;
+}
+.vxe-tabs--round-card .vxe-tabs-header--item {
+  margin: 0;
+}
+.vxe-tabs-header--item:hover {
+  background-color: $hoveButton;
+}
+.vxe-tabs-header--item.is--active {
+  color: $fontTabsSelected;
+}
+.vxe-tabs-header--item-name {
+  color: $fontTabsDefalut;
+}
+.vxe-tabs.trigger--default
+  .vxe-tabs-header--item:hover
+  .vxe-tabs-header--item-name {
+  color: $fontTabsHover;
+}
+.vxe-tabs--round-card .vxe-tabs-pane--item.has--content,
+.vxe-tabs--round-card.is--height .vxe-tabs-pane--item,
+.vxe-tabs--round-card.is--padding .vxe-tabs-pane--item {
+  border-bottom: 1px solid $tabsBorder;
+  border-left: 1px solid $tabsBorder;
+  border-right: 1px solid $tabsBorder;
+  background-color: $contentBg;
+}
+.vxe-tabs--round-card .vxe-tabs-header--item {
+  border-top: 1px solid $tabsBorder;
+  border-left: 1px solid $tabsBorder;
+  border-right: 1px solid $tabsBorder;
+}
+.vxe-tabs-header--wrapper:after {
+  background-color: $tabsBorder;
+}
+.vxe-tabs--round-card .vxe-tabs-header--item.is--active {
+  background-color: #fff;
+}
+.vxe-modal--header {
+  height: 32px * 0.8;
+}
+// .vxe-modal--wrapper.type--alert .vxe-modal--header,
+// .vxe-modal--wrapper.type--confirm .vxe-modal--header,
+// .vxe-modal--wrapper.type--modal .vxe-modal--header {
+//   border-bottom: 1px solid $dialogBorder;
+//   background-color: $dialogBg;
+// }
+.vxe-modal--body {
+  background-color: $dialogBg;
+}
+.vxe-modal--footer {
+  background-color: $dialogBg;
+}
+
+.vxe-card {
+  width: 100%;
+  border: 1px solid $dialogContentBorder;
+  background-color: $dialogBg;
+  font-size: 12px;
+  .vxe-card--header {
+    background-color: $dialogToolsBg;
+    padding: 0 12px !important;
+    flex-grow: unset;
+  }
+}
+
+// 表头单位单元格取消padding
+.vxe-grid {
+  .vxe-grid--table-container {
+    .vxe-table--header {
+      > thead {
+        > :nth-child(2) {
+          .vxe-header--column {
+            .vxe-cell {
+              width: 100% !important;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.vxe-loading {
+  .vxe-loading--chunk {
+    .vxe-loading--text {
+      display: none;
+    }
+  }
+}

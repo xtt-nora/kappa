@@ -1,0 +1,67 @@
+.load {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $dialogToolsBg;
+
+  .load_header {
+    height: 78px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(
+        0.25turn,
+        rgba(0, 0, 0, 0),
+        $dialogContentBorder,
+        $dialogContentBorder,
+        rgba(0, 0, 0, 0)
+    ) 1;
+    background-color: $dialogStepContentBg;
+
+    .main_title {
+      font-weight: bold;
+      color: $color-5;
+    }
+
+    .sub_title {
+      margin-left: 20px;
+      color: $color-5;
+    }
+  }
+
+  .load_main {
+    height: calc(100% - 80px - 50px);
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+  }
+
+  .load_footer {
+    height: 50px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-top: 1px solid;
+    border-image: linear-gradient(
+        0.25turn,
+        rgba(0, 0, 0, 0),
+        $dialogContentBorder,
+        $dialogContentBorder,
+        rgba(0, 0, 0, 0)
+    ) 1;
+    display: flex;
+    justify-content: flex-end;
+
+    .button {
+      width: 80px;
+    }
+
+    .step_button {
+      margin-left: 5px;
+    }
+
+    .cancel_button {
+      margin-left: 12px;
+    }
+  }
+}

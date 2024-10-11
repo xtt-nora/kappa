@@ -1,0 +1,53 @@
+$fonts:
+  "mini" normal 11px,
+  "miniBold" 600 11px,
+  "miniSecon" 500 11px,
+  "small" normal 12px,
+  "smallBold" 600 12px,
+  "smallSecon" 500 12px,
+  "medium" normal 13px,
+  "mediumBold" 600 13px,
+  "mediumSecon" 500 13px,
+  "large" normal 14px,
+  "largeBold" 600 14px,
+  "largeSecon" 500 14px,
+  "more" normal 20px,
+  "moreBold" 600 20px,
+  "moreSecon" 500 20px;
+
+@each $name, $weight, $size in $fonts {
+  .font-#{$name} {
+    font-size: $size !important;
+    font-weight: $weight !important;
+  }
+}
+.hover {
+  &:hover {
+    background-color: #ebecf0; // 鼠标悬停时的背景颜色
+    border-radius: 5px;
+  }
+}
+
+@for $i from 1 through 200 {
+  // 取值范围是1～200px
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i}px;
+  }
+}
+
+// $heights: 20px, 50px, 100px, 150px, 200px;
+
+// @each $h in $heights {
+//   .h-#{$h} {
+//     height: $h;
+//   }
+// }

@@ -1,0 +1,4 @@
+{
+    "*.{ts,js,vue,tsx,jsx}": ["npm run lint:eslint", "prettier --write"]
+  }
+  

@@ -1,0 +1,177 @@
+// 居中
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// hover
+@mixin hover {
+  background-color: $color-11;
+  border-radius: 4px;
+}
+// 选中
+@mixin active {
+  background-color: $color-14;
+  border-radius: 4px;
+}
+
+// 水平space-around
+@mixin flex-space {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+// 竖向居中可换行
+@mixin flex-column {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+// 竖向 靠左可换行
+@mixin flex-left {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+
+// 单行文本溢出显示 ...
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 禁止复制文字
+@mixin stop-copy {
+  user-select: none;
+}
+
+// 可以复制文字(不特定设置就按照浏览器自动设置)
+@mixin copy {
+  user-select: text;
+}
+
+@mixin h1 {
+  font-size: 16px;
+  font-weight: 600px;
+  line-height: 20px;
+}
+
+@mixin h2 {
+  font-size: 14px;
+  font-weight: 600px;
+  line-height: 18px;
+}
+
+@mixin defaultFont {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+@mixin defaultSemFont {
+  font-size: 12px;
+  font-weight: 600px;
+  line-height: 15px;
+}
+
+@mixin paragraph {
+  font-size: 12px;
+  font-weight: 500px;
+  line-height: 17px;
+}
+
+@mixin mediumFont {
+  font-size: 12px;
+  font-weight: 500px;
+  line-height: 14px;
+  transform: scale(0.91, 0.91);
+}
+
+@mixin mediumSemFont {
+  font-size: 12px;
+  font-weight: 600px;
+  line-height: 14px;
+  transform: scale(0.91, 0.91);
+}
+
+@mixin center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin n-collapse {
+  .n-collapse-item {
+    padding: 5px 0;
+    margin: 0;
+    :deep(.n-collapse-item__content-inner) {
+      padding-top: 5px;
+    }
+  }
+  :deep(.n-collapse-item__header) {
+    padding: 0;
+  }
+  :deep(.n-collapse-item__content-wrapper) {
+    padding: 0 10px;
+  }
+  :deep(.n-scrollbar-rail) {
+    right: 0;
+  }
+}
+
+@mixin n-form {
+  .n-form {
+    .n-h {
+      width: 100%;
+      margin-bottom: 10px;
+      cursor: default;
+    }
+    :deep(.n-form-item-feedback-wrapper) {
+      min-height: 10px;
+    }
+    :deep(.n-form-item-blank) {
+      justify-content: center;
+      .n-input-number {
+        width: 100%;
+      }
+    }
+    .n-form-button {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@mixin n-list {
+  :deep(.n-list) {
+    .n-list-item {
+      padding: 0;
+      .n-list-item__divider {
+        display: none;
+      }
+      .n-list-item__main {
+        .n-thing {
+          .n-thing-header {
+            .n-thing-header__title {
+              font-size: 12px;
+              color: $color-6;
+            }
+          }
+          .n-thing-main {
+            .n-thing-avatar-header-wrapper {
+              .n-thing-avatar {
+                margin-right: 6px;
+                margin-top: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

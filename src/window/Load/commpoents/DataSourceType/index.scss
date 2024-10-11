@@ -1,0 +1,86 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+
+  .load_main_left {
+    height: 100%;
+    min-width: 300px;
+    width: 30%;
+
+    .data_source_type {
+      display: flex;
+
+      .data_source_type_button {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+        margin-right: 5px;
+      }
+    }
+
+    .data_source_form_item {
+      margin-top: 12px;
+      height: 22px;
+      display: flex;
+
+      .data_source_form_item_group {
+        display: flex;
+      }
+
+      .data_source_form_item_input {
+        width: 70%;
+        height: 22px;
+      }
+
+      .data_source_form_input_number {
+        width: 30%;
+        margin: 0 5px;
+      }
+
+      .data_source_form_button {
+        width: 22px;
+        height: 22px;
+        padding: 2px;
+        margin-left: 10px
+      }
+    }
+  }
+
+  .load_main_right {
+    height: 100%;
+    width: 70%;
+    position: relative;
+
+  }
+
+  .load_card {
+    height: 100%;
+
+    .load_card_content {
+      height: 100%;
+
+      .load_card_content_input {
+        height: 100%;
+
+        textarea {
+          resize: none;
+        }
+      }
+
+      #luckySheetExcel {
+        height: 100%;
+        width: 100%;
+        white-space: initial;
+      }
+
+
+    }
+  }
+}
+
+.text_diasbled {
+  color: #c2c2c2
+}

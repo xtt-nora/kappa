@@ -1,0 +1,19 @@
+.scrollbar_global {
+  /*修改滚动条样式*/
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(191, 191, 191, 0);
+    border-radius: 10px;
+  }
+  &:hover {
+    &::-webkit-scrollbar {
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(191, 191, 191, 1);
+    }
+  }
+}

@@ -1,0 +1,207 @@
+.n-form-item {
+  align-items: center !important;
+  padding: 4px 0;
+  .n-form-item-label,
+  .n-form-item-label--right-mark {
+    padding-bottom: 0;
+    align-items: center !important;
+    min-height: unset;
+    .n-form-item-label__text {
+      font-size: 12px;
+      @include ellipsis;
+    }
+  }
+  .n-form-item-feedback-wrapper {
+    display: none;
+  }
+}
+
+.n-collapse {
+  .n-collapse-item {
+    margin: 0;
+    .n-collapse-item__header {
+      padding: 0;
+      .n-collapse-item__header-main {
+        border: 1px solid $inputBorder;
+        border-radius: 2px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 1) 0%,
+          $collapseBg 40%
+        );
+        line-height: 26px;
+        box-shadow: 0px 1px 2px 0px $inputBorder;
+        margin-bottom: 4px;
+      }
+    }
+    .n-collapse-item__content-wrapper {
+      padding: 0 12px;
+      .n-collapse-item__content-inner {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.n-thing {
+  .n-thing-main {
+    .n-thing-avatar-header-wrapper {
+      .n-thing-header-wrapper {
+        font-size: 12px;
+        .n-thing-header {
+          .n-thing-header__title {
+            font-size: 12px;
+          }
+        }
+        .n-thing-main__description {
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+
+.n-card {
+  width: 100%;
+  border: 1px solid $secondMenuBorder !important;
+  background-color: $dialogBg;
+  .n-card-header {
+    font-size: 12px;
+    border-bottom: 1px solid $secondMenuBorder !important;
+    background-color: $dialogToolsBg;
+    padding: 0 12px !important;
+    flex-grow: unset;
+  }
+  .n-card__content {
+    font-size: 12px;
+    padding: var(--vxe-ui-card-padding);
+  }
+}
+
+.n-tree {
+  .n-tree-node-wrapper {
+    padding: 0;
+    .n-tree-node,
+    .n-tree-node--selectable,
+    .n-tree-node--clickable {
+      .n-tree-node-switcher,
+      .n-tree-node-switcher--expanded {
+      }
+      .n-tree-node-content {
+        .n-tree-node-content__prefix {
+        }
+        .n-tree-node-content__text {
+          @include ellipsis;
+        }
+      }
+    }
+  }
+}
+
+.n-tabs {
+  display: flex;
+  flex-direction: column;
+  .n-tabs-nav {
+    height: 22px;
+    .n-tabs-nav__prefix {
+      padding: 0 !important;
+    }
+
+    .n-tabs-nav__suffix {
+      border: none !important;
+    }
+    .n-tabs-nav-scroll-wrapper
+      .v-x-scroll
+      .n-tabs-nav-scroll-content
+      .n-tabs-wrapper
+      .n-tabs-tab-wrapper {
+      height: 22px;
+      .n-tabs-tab {
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 12px;
+        border: 1px solid $dialogBorder;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.8) 0%,
+          $tabsBg 20%,
+          $tabsBg 80%,
+          rgba(255, 255, 255, 0.8) 100%
+        );
+      }
+      .n-tabs-tab:hover {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.8) 0%,
+          $tableCollapseBg 20%,
+          $tableCollapseBg 80%,
+          rgba(255, 255, 255, 0.8) 100%
+        );
+      }
+      .n-tabs-tab-pad {
+        display: none;
+      }
+      .n-tabs-tab--active {
+        font-size: 12px;
+        background: none !important;
+        border-bottom: 1px solid #0000;
+        background-color: $dialogStepContentBg;
+      }
+    }
+    .n-tabs-pad {
+      border-bottom: 1px solid $dialogBorder !important;
+    }
+  }
+  .n-tab-pane {
+    flex: 1;
+    box-sizing: border-box;
+    border: 1px solid $dialogBorder;
+    border-top: 1px solid #0000;
+  }
+}
+
+.n-color-picker {
+  .n-color-picker-trigger {
+    .n-color-picker-trigger__fill {
+      position: unset;
+    }
+  }
+}
+
+.n-date-picker {
+  width: 100%;
+}
+
+.n-select {
+  .n-base-selection {
+    .n-base-selection-placeholder,
+    .n-base-selection-overlay,
+    .n-base-selection-tags,
+    .n-base-selection-label {
+      .n-tag {
+        height: auto;
+        .n-tag__content {
+          font-size: 10px;
+        }
+        ::before {
+          width: 12px;
+          height: 12px;
+        }
+        .n-tag__border {
+          height: 12px;
+        }
+      }
+      .n-base-selection-tag-wrapper {
+        .n-tag--closable {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+}
+
+.n-checkbox {
+  .n-checkbox__label {
+    white-space: nowrap;
+  }
+}

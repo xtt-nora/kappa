@@ -1,0 +1,124 @@
+@import "./mixins.scss";
+
+// 全局变量
+$gray-bg: #ffffff;
+$color-1: #009d40;
+$color-2: #ff5151;
+$color-3: #ffe2e2;
+$color-4: #c7c7c7;
+$color-5: #000000;
+$color-6: #818594;
+$color-7: #009d40;
+$color-8: #009d40;
+$color-9: #44a5ff;
+$color-10: #f0f9ff;
+$color-11: #f0f0f0;
+$color-12: #818181;
+$color-13: #ebecf0;
+$color-14: #dcdcdc;
+$color-15: #e6f7e9;
+$color-16: #f7f8fa;
+$color-17: #d9d9d9;
+$color-18: #6c707e;
+$colors: (
+  "color-1": $color-1,
+  "color-2": $color-2,
+  "color-3": $color-3,
+  "color-4": $color-4,
+  "color-5": $color-5,
+  "color-6": $color-6,
+  "color-7": $color-7,
+  "color-8": $color-8,
+  "color-9": $color-9,
+  "color-16": $color-16
+);
+
+@each $name, $color in $colors {
+  .#{$name} {
+    color: $color;
+  }
+}
+
+// width or height
+$dialogHeaderHeight: 34px * 0.8;
+$dialogToolsWidth: 46px * 0.8;
+$selectHeight: 22px * 0.8;
+$inputHeight: 22px * 0.8;
+$dialogButtonHeight: 26px * 0.8;
+$CollapseHeight: 36px * 0.8;
+$checkBoxHeightOrWidth: 16px * 0.8;
+$buttonHeight: 30px * 0.8;
+// $buttonWidth: 110px;
+$tabsHeight: 25px * 0.8;
+$tabsSelectedHeight: 26px * 0.8;
+$tableCollapseHeight: 30px * 0.8;
+$tableRowHeight: 22px * 0.8;
+
+//颜色
+$contentBg: #f0f0f0; //内容背景
+$sideBarBg: #ebecef; //首页侧边栏背景
+$indexBorder: #d4d6db;
+$initBorder: #c7c9d0;
+$hoveButton: #dfe7fe; //按钮悬浮
+$hoverButtonBorder: #d2d3d8; //按钮悬浮边
+$hoverMenuBorder: #1583da; // 文件项目悬浮
+$initTitle: #e6e7eb;
+$fristMenuBg: #c8c9d0; //菜单按钮背景
+$seconMenuBg: #f9f9fb; //二级菜单背景
+$threeMenuBg: #f9f9fb; //三级菜单背景
+
+$fristMenuBorder: #b7b8c1; //一级菜单边框
+$secondMenuBorder: #dbdce1; //二级菜单边框
+$threeMenuBorder: #c3c5cc; //三级菜单边框
+
+$fristMenuHover: #dadbe1; //一级菜单按钮
+
+$fileButtonBg: #296cb4;
+
+$sideChartsBarBg: #b2cbeb;
+$sideChartsTabBg: #dddee2;
+$sideChartsBorder: #afb1b9;
+
+// 所有窗口形式，弹窗
+$dialogHeaderBg: #e4e5e8;
+$dialogSelectedHeaderBg: #cadbed;
+$dialogToolsBg: #ebecef;
+$dialogBg: #f0f0f0;
+$dialogBg0: #c8c9d0;
+$dialogBorder: #a6a9b2;
+$dialogContentBorder: #c2c4cb;
+$dialogStepContentBg: #ffffff;
+// form表单
+$tabsBg: #dedfe4; //tabs默认背景
+$selectedTabs: #ebecef; //tabs被选中背景
+$tabsBorder: #a5a8b1;
+$collapseBg: #eaebef; //折叠面板颜色
+$collapseItemContent: #ebecef; //折叠面板展开内容背景
+$selectedRadio: #6784cc; //radio被选中颜色
+$disable: #ebecef; //禁止编辑颜色
+$selectHover: #eff0f2; //下拉框选择悬浮
+$inputBorder: #ced0d6; //输入框边框
+$buttonBg: #e9ebef; //按钮背景
+$buttonBorder: #b0b3bb;
+$checkBoxSelected: #b2cbeb; //check选中
+//table
+$tableCollapseBg: #b2cbeb; //table折叠背景
+$tableSelectedCollapseBg: #e2eafd; //table折叠选中背景
+$tableSelectedRowBg: #e2eafd; // table行选中
+
+//result
+$resultHeader: #e4e5e8;
+$resultBorder: #a6a9b2;
+
+//font颜色
+$fontTabsDefalut: #6b6a7a;
+$fontTabsHover: #353448;
+$fontTabsSelected: #353448;
+
+// 一些常用色块背景
+$initBg: #ebecef;
+$initBorder: #a7a7a7;
+$initBorderlight: #d5d7db;
+
+// pane模块
+$paneActive: #00ffff;
